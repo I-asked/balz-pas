@@ -1,0 +1,7 @@
+h1. BALZ compressor (Pascal port)
+
+BALZ ported from cpp to Free Pascal with added stdin/-out support for use with @tar@.
+
+h2. Usage
+
+Build the command line program with Lazarus or @lazbuild@ or just drop @balz.pas@ in your project...
