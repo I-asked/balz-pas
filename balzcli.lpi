@@ -42,6 +42,9 @@
     <CodeGeneration>
       <SmartLinkUnit Value="True"/>
       <TargetProcessor Value="COREAVX2"/>
+      <Optimizations>
+        <OptimizationLevel Value="3"/>
+      </Optimizations>
     </CodeGeneration>
     <Linking>
       <Debugging>

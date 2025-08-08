@@ -77,8 +77,11 @@ begin
     Halt(1);
   end;
 
-  WriteLn(StdErr, IFs.Size, ' -> ', OFs.Position,
-          ' (', Round(100 * (OFs.Position / IFs.Size)), '%)');
+  if IFs.Size = 0 then
+    WriteLn(StdErr, IFs.Size, ' -> ', OFs.Position)
+  else
+    WriteLn(StdErr, IFs.Size, ' -> ', OFs.Position,
+            ' (', Round(100 * (OFs.Position / IFs.Size)), '%)');
 
   IFs.Free;
   OFs.Free;
