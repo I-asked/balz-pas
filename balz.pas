@@ -49,7 +49,6 @@ type
     function Decode(IStr: TStream; C1: Longint): Longint; inline; overload;
     function DecodeIdx(IStr: TStream; C2: Longint): Longint; inline;
   public
-    constructor Create;
     procedure Compress(Inp, Outp: TStream; Max: Boolean);
     procedure Decompress(Inp, Outp: TStream);
   end;
@@ -94,10 +93,6 @@ const
 
   MIN_MATCH = 3;
   MAX_MATCH = 255 + MIN_MATCH;
-
-constructor TBALZCodec.Create;
-begin
-end;
 
 procedure TBALZCodec.E8E9Xform(N: Longint; Fwd: Boolean);
 var
