@@ -31,14 +31,6 @@ type
     constructor Create(P: Pointer; ASize: PtrUInt);
   end;
 
-(*
-function CBALZCompress(InBuf: pcuint8; NumIn: cuint64; Max: cbool; out OutBuf: pcuint8; out NumOut : cint64; out Error: pchar): PCBALZContext; cdecl; { public name 'balz_compress'; }
-
-function CBALZDecompress(InBuf: pcuint8; NumIn: cuint64; out OutBuf: pcuint8; out NumOut : cint64; out Error: pchar): PCBALZContext; cdecl; { public name 'balz_decompress'; }
-
-procedure CBALZFreeContext(Context: PCBALZContext); cdecl; { public name 'balz_free'; }
-*)
-
 constructor TUserMemoryStream.Create(P: Pointer; ASize: PtrUInt);
 begin
   inherited Create;
