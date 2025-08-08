@@ -1,0 +1,9 @@
+h1. libcbalz
+
+A small library for reading and writing BALZ-compressed data from C and languages other than Pascal that support wrapping the C ABI.
+
+h2. Usage
+
+Build by running @make@, then @make install PREFIX=/usr/local@ to install.
+
+A C-language programming example is provided in @./test_c@.

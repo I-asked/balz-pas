@@ -6,6 +6,8 @@
 *.rst
 *.cgi
 *.exe
+*.dll
+*.so
 *.log
 *.bak*
 fp.ini
